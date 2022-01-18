@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px gray;
+          box-shadow: 2px 2px 5px gray;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 400px;
+          flex: 5 1 400px;
+}
+
+header div.logo img {
+  position: relative;
+  bottom: 0.2rem;
+  width: 7vw;
+  height: 7vw;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul li a {
+  color: #1a3094;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  color: #1940ec;
+}
+
+@media screen and (max-width: 760px) {
+  header div.logo img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+main section.backImg {
+  width: 100%;
+  min-height: 40vw;
+  color: white;
+  background: url("../backImg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 0;
+}
+
+main section.backImg div.filter {
+  width: 100%;
+  min-height: 40vw;
+  background-color: rgba(0, 0, 0, 0.048);
+  position: absolute;
+  z-index: -1;
+}
+
+main section.backImg h3 {
+  font-size: 3.5rem;
+}
+
+main section.backImg button.startRent {
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 1.75rem;
+  background-color: #0a4049;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.backImg button.startRent:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main section.sevice {
+  font-size: 1.3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.sevice h3 {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main section.sevice section.seviceCard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.sevice section.seviceCard div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+main section.sevice section.seviceCard div.card h4 {
+  padding-bottom: 0.5rem;
+}
+
+main section.sevice section.seviceCard div.card img {
+  width: 20vw;
+  height: 25vw;
+  padding-bottom: 0.5rem;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+main section.sevice section.seviceCard div.card p {
+  padding-bottom: 0.5rem;
+  width: 10rem;
+}
+
+main section.sevice section.seviceCard div.card button {
+  font-size: 1.1rem;
+  color: white;
+  background-color: #0b889e;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.sevice section.seviceCard div.card button:hover {
+  color: #081230;
+}
+
+footer {
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+footer div.logo img {
+  position: relative;
+  bottom: 0.2rem;
+  width: 7vw;
+  height: 7vw;
+}
+
+footer div.logo h2 {
+  font-size: 1.5rem;
+}
+
+footer nav {
+  margin: 1rem;
+}
+
+footer nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav ul a {
+  color: #1a3094;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+footer nav ul a:hover {
+  color: #1940ec;
+}
+
+footer div.link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem;
+}
+
+footer div.link a img {
+  margin: 1rem 2rem;
+  width: 5vw;
+  height: 5vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50px;
+          flex: 1 1 50px;
+}
+
+footer div.link a:hover {
+  position: relative;
+  bottom: 0.5rem;
+}
+
+@media screen and (max-width: 545px) {
+  main section.backImg h3 {
+    font-size: 1.7rem;
+  }
+  main section.backImg button.startRent {
+    font-size: 1rem;
+  }
+  main section.sevice {
+    font-size: 0.95rem;
+  }
+  main section.sevice section.seviceCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.sevice section.seviceCard div.card img {
+    width: 28vw;
+    height: 33vw;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  footer nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div.link a img {
+    width: 7vw;
+    height: 7vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

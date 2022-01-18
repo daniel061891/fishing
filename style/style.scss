@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+  div.logo {
+    display: flex;
+    align-items: center;
+    flex: 5 1 400px;
+    img {
+      position: relative;
+      bottom: 0.2rem;
+      width: 7vw;
+      height: 7vw;
+    }
+  }
+  nav {
+    flex: 2 1 400px;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      li {
+        a {
+          color: rgb(26, 48, 148);
+          text-decoration: none;
+          font-size: 1.2rem;
+          &:hover {
+            color: rgb(25, 64, 236);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  header {
+    div.logo {
+      img {
+        width: 12vw;
+        height: 12vw;
+      }
+    }
+  }
+}
+main {
+  section.backImg {
+    width: 100%;
+    min-height: 40vw;
+    color: rgb(255, 255, 255);
+    background: url("../backImg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    div.filter {
+      width: 100%;
+      min-height: 40vw;
+      background-color: rgba(0, 0, 0, 0.048);
+      position: absolute;
+      z-index: -1;
+    }
+    h3 {
+      font-size: 3.5rem;
+    }
+    button.startRent {
+      margin-top: 1.5rem;
+      color: rgb(255, 255, 255);
+      font-size: 1.5rem;
+      padding: 1rem 1.75rem;
+      background-color: rgb(10, 64, 73);
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  section.sevice {
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      padding: 1.5rem;
+      text-align: center;
+    }
+    section.seviceCard {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      div.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 300px;
+        h4 {
+          padding-bottom: 0.5rem;
+        }
+        img {
+          width: 20vw;
+          height: 25vw;
+          padding-bottom: 0.5rem;
+          border-radius: 50%;
+          background-size: cover;
+        }
+        p {
+          padding-bottom: 0.5rem;
+          width: 10rem;
+        }
+        button {
+          font-size: 1.1rem;
+          color: white;
+          background-color: rgb(11, 136, 158);
+          border: none;
+          margin: 0.5rem;
+          padding: 0.75rem;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          &:hover {
+            color: rgb(8, 18, 48);
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.logo {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    img {
+      position: relative;
+      bottom: 0.2rem;
+      width: 7vw;
+      height: 7vw;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  nav {
+    margin: 1rem;
+    ul {
+      list-style-type: none;
+      display: flex;
+      //   flex-wrap: wrap;
+      a {
+        color: rgb(26, 48, 148);
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 1rem;
+        &:hover {
+          color: rgb(25, 64, 236);
+        }
+      }
+    }
+  }
+  div.link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    a {
+      img {
+        margin: 1rem 2rem;
+        width: 5vw;
+        height: 5vw;
+        flex: 1 1 50px;
+      }
+      &:hover {
+        position: relative;
+        bottom: 0.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+  main {
+    section.backImg {
+      h3 {
+        font-size: 1.7rem;
+      }
+      button.startRent {
+        font-size: 1rem;
+      }
+    }
+    section.sevice {
+      font-size: 0.95rem;
+      section.seviceCard {
+        flex-direction: column;
+        align-items: center;
+        div.card {
+          img {
+            width: 28vw;
+            height: 33vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:410px) {
+  footer {
+    nav {
+      ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    div.link {
+      a {
+        img {
+          width: 7vw;
+          height: 7vw;
+        }
+      }
+    }
+  }
+}
+// .scroll {
+
+// }
